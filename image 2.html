@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image</title>
+
+    <!-- Styles for the popup container -->
+    <style>
+        #popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .close-button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Generated code from www.image-map.net -->
+    <img src="C:\Users\milan\Downloads\Energy park.png" alt="Interactive Image" usemap="#image-map">
+    <map name="image-map">
+        <area target="_parent" alt="HVAC" title="HVAC" href="#" coords="326,335,374,309,373,291,306,250,266,274,264,300" shape="poly" onclick="showPopup('HVAC Popup', 'This is the text for the HVAC popup.')">
+        <area target="_parent" alt="Green Hydrogen production" title="Green Hydrogen production" href="#" coords="737,290,760,305,807,278,803,260,783,249,737,274" shape="poly" onclick="showPopup('Green Hydrogen Production Popup', 'This is the text for Green Hydrogen Production popup.')">
+        <area target="_parent" alt="Battery storage" title="Battery storage" href="#" coords="607,525,629,522,633,571,609,569" shape="poly" onclick="showPopup('Battery Storage Popup', 'This is the text for Battery Storage popup.')">
+    </map>
+
+    <!-- Popup container -->
+    <div id="popup-container">
+        <div id="popup-content"></div>
+        <button class="close-button" onclick="hidePopup()">Close</button>
+    </div>
+
+    <!-- JavaScript to handle popups -->
+    <script>
+        function showPopup(title, text) {
+            var popupContainer = document.getElementById('popup-container');
+            var popupContent = document.getElementById('popup-content');
+            
+            // Set the title and text content of the popup
+            popupContent.innerHTML = `<h3>${title}</h3><p>${text}</p>`;
+
+            // Display the popup
+            popupContainer.style.display = 'block';
+        }
+
+        function hidePopup() {
+            var popupContainer = document.getElementById('popup-container');
+
+            // Hide the popup
+            popupContainer.style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
