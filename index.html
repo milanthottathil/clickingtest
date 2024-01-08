@@ -33,9 +33,9 @@
     <!-- Generated code from www.image-map.net -->
     <img src="Energy park.png" alt="Interactive Image" usemap="#image-map">
     <map name="image-map">
-        <area target="_parent" alt="HVAC" title="HVAC" href="#" coords="326,335,374,309,373,291,306,250,266,274,264,300" shape="poly" onclick="showPopup('HVAC Popup', 'This is the text for the HVAC popup.')">
-        <area target="_parent" alt="Green Hydrogen production" title="Green Hydrogen production" href="#" coords="737,290,760,305,807,278,803,260,783,249,737,274" shape="poly" onclick="showPopup('Green Hydrogen Production Popup', 'This is the text for Green Hydrogen Production popup.')">
-        <area target="_parent" alt="Battery storage" title="Battery storage" href="#" coords="607,525,629,522,633,571,609,569" shape="poly" onclick="showPopup('Battery Storage Popup', 'This is the text for Battery Storage popup.')">
+        <area target="_parent" alt="HVAC" title="HVAC" href="#" coords="326,335,374,309,373,291,306,250,266,274,264,300" shape="poly" onclick="showPopup('HVAC Popup')">
+        <area target="_parent" alt="Green Hydrogen production" title="Green Hydrogen production" href="" coords="737,290,760,305,807,278,803,260,783,249,737,274" shape="poly">
+        <area target="_parent" alt="Battery storage" title="Battery storage" href="" coords="607,525,629,522,633,571,609,569" shape="poly">
     </map>
 
     <!-- Popup container -->
@@ -46,12 +46,12 @@
 
     <!-- JavaScript to handle popups -->
     <script>
-        function showPopup(title, text) {
+        function showPopup(text) {
             var popupContainer = document.getElementById('popup-container');
             var popupContent = document.getElementById('popup-content');
             
-            // Set the title and text content of the popup
-            popupContent.innerHTML = `<h3>${title}</h3><p>${text}</p>`;
+            // Set the text content of the popup
+            popupContent.innerHTML = "In house capability";
 
             // Display the popup
             popupContainer.style.display = 'block';
