@@ -34,8 +34,8 @@
     <img src="C:\Users\milan\Downloads\Energy park.png" alt="Interactive Image" usemap="#image-map">
     <map name="image-map">
         <area target="_parent" alt="HVAC" title="HVAC" href="#" coords="326,335,374,309,373,291,306,250,266,274,264,300" shape="poly" onclick="showPopup('HVAC Popup')">
-        <area target="_parent" alt="Green Hydrogen production" title="Green Hydrogen production" href="#" coords="737,290,760,305,807,278,803,260,783,249,737,274" shape="poly" onclick="showPopup('Hydrogen Popup')">
-        <area target="_parent" alt="Battery storage" title="Battery storage" href="#" coords="607,525,629,522,633,571,609,569" shape="poly" onclick="showPopup('Battery Popup')">
+        <area target="_parent" alt="Green Hydrogen production" title="Green Hydrogen production" href="" coords="737,290,760,305,807,278,803,260,783,249,737,274" shape="poly">
+        <area target="_parent" alt="Battery storage" title="Battery storage" href="" coords="607,525,629,522,633,571,609,569" shape="poly">
     </map>
 
     <!-- Popup container -->
@@ -51,7 +51,7 @@
             var popupContent = document.getElementById('popup-content');
             
             // Set the text content of the popup
-            popupContent.innerHTML = text;
+            popupContent.innerHTML = "In house capability";
 
             // Display the popup
             popupContainer.style.display = 'block';
